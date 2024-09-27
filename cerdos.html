@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cerdos</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+      .header {
+        position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espacia los elementos a los extremos */
+  padding: 10px 20px; /* Espacio alrededor del header */
+  background-color: #f8f9fa; /* Color de fondo del header */
+}
+
+
+.header-logo {
+  max-height: 50px; /* Altura máxima de la imagen del logo */
+  height: auto; /* Mantiene la relación de aspecto */
+}
+
+.header-button {
+  padding: 10px 20px; /* Espacio interno del botón */
+  font-size: 1rem; /* Tamaño del texto del botón */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 4px; /* Esquinas redondeadas del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s; /* Transición suave del color de fondo */
+  margin-right: 40px;
+}
+
+.header-button:hover {
+  background-color: #0056b3; /* Color de fondo cuando el botón se pasa el cursor por encima */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .header {
+     flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
+  }
+
+  .header-button {
+    margin-top: 10px; /* Espacio arriba del botón cuando está apilado */
+  }
+}
+
+        header h1, footer p {
+            margin: 0;
+        }
+   
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h2 {
+color: #333333; /* Color de texto oscuro */
+  font-size: 2.5rem; /* Tamaño grande de fuente */
+  margin-top: 0; /* Elimina el margen superior predeterminado */
+  margin-bottom: 20px; /* Espacio abajo para separación */
+  font-weight: bold; /* Negrita para mayor impacto */
+
+}
+
+p {
+  color: #666666; /* Color de texto gris */
+  font-size: 1.2rem; /* Tamaño de fuente más pequeño */
+  margin-top: 10px; /* Espacio arriba para separación */
+  margin-bottom: 0; /* Elimina el margen inferior predeterminado */
+   margin-top: 20px; /* Espacio arriba para separación */
+  margin-bottom: 20px; /* Espacio abajo para separación */
+  margin-left: 20px; /* Margen a la izquierda */
+  margin-right: 20px; /* Margen a la derecha */
+}
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .box {
+          background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 90%;
+            margin: 20px;
+        }
+
+
+          button {
+            padding: 15px 60px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra ligera */
+        }
+
+      
+
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .box {
+                flex: 1 1 calc(33.333% - 40px);
+                max-width: none;
+            }
+        }
+
+.box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+  height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+  margin-top: 20px; /* Espacio arriba para separación */
+  margin-bottom: 20px; /* Espacio abajo para separación */
+  border-radius: 8px; /* Añade esquinas redondeadas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para efecto de elevación */
+        }
+
+        .bold-text {
+  font-weight: bold;
+  color: #007bff;
+
+}
+
+
+       
+
+        .container button:hover {
+            background-color: #007bff;
+        }
+
+        .container-one img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+
+
+        .uno {
+            max-width: 40%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+.responsive-img1 {
+  max-width: 20%; /* Asegura que la imagen no se desborde del contenedor */
+  height: 100%; /* Permite que la altura se ajuste automáticamente según el ancho */
+  display: block; /* Hace que la imagen sea un bloque para alinearla correctamente */
+  margin: 0 auto; /* Centra la imagen horizontalmente dentro del contenedor */
+  border-radius: 8px; /* Añade esquinas redondeadas */
+
+}
+        .responsive-img {
+  max-width: 20%; /* Asegura que la imagen no se desborde del contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+  display: block; /* Hace que la imagen sea un bloque para alinearla correctamente */
+  margin: 0 auto; /* Centra la imagen horizontalmente dentro del contenedor */
+  border-radius: 8px; /* Añade esquinas redondeadas */
+
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px; /* Ajusta la distancia desde el borde inferior */
+  right: 20px; /* Ajusta la distancia desde el borde derecho */
+  background-color: #25D366; /* Color de fondo de WhatsApp */
+  border-radius: 50%; /* Hace que el botón sea circular */
+  width: 60px; /* Tamaño del botón */
+  height: 60px; /* Tamaño del botón */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el efecto flotante */
+  z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.whatsapp-float img {
+  width: 30px; /* Tamaño del logo dentro del botón */
+  height: 30px; /* Tamaño del logo dentro del botón */
+}
+
+.whatsapp-float:hover {
+  background-color: #128C7E; /* Color de fondo cuando el botón se pasa el cursor por encima */
+}
+.social-media {
+  display: flex;
+  gap: 20px; /* Espacio entre los íconos */
+  justify-content: center; /* Centra los íconos horizontalmente */
+  padding: 20px; /* Espacio alrededor del contenedor */
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Tamaño del contenedor del ícono */
+  height: 50px; /* Tamaño del contenedor del ícono */
+  border-radius: 50%; /* Hace que el contenedor sea circular */
+  background-color: #f1f1f1; /* Fondo claro para el contenedor del ícono */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el efecto flotante */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.social-icon img {
+  width: 30px; /* Tamaño del logo dentro del contenedor */
+  height: 30px; /* Tamaño del logo dentro del contenedor */
+}
+
+.social-icon:hover {
+  background-color: #ddd; /* Color de fondo cuando se pasa el cursor sobre el ícono */
+}
+
+.account-info {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul > li {
+  margin-bottom: 15px;
+}
+
+ul > li > ul {
+  padding-left: 20px;
+}
+
+strong {
+  color: #007bff;
+}
+
+.profile-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+.profile-content {
+    padding: 20px;
+}
+
+.profile-name {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.profile-title {
+    margin: 5px 0 15px;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.profile-description {
+    font-size: 1em;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.profile-contact {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact-link {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.steps-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.steps-title {
+    margin: 0 0 20px;
+    font-size: 1.8em;
+    color: #333;
+    text-align: center;
+}
+
+.steps-list {
+    list-style-type: decimal;
+    padding: 0;
+    margin: 0;
+}
+
+.step-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 4px solid #1a73e8;
+    background-color: #f9f9f9;
+}
+
+.step-number {
+    margin: 0 0 5px;
+    font-size: 1.2em;
+    color: #1a73e8;
+}
+
+.step-description {
+    margin: 0;
+    font-size: 1em;
+    color: #444;
+}
+
+.additional-info {
+    margin-top: 30px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.info-title {
+    margin: 0 0 15px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.additional-info p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+    <img src="C:\Users\HP\Desktop\13.png" alt="Logo" class="header-logo">
+    <button class="header-button">Quiero invertir</button>
+  </header>
+    <main>
+
+
+        <div class="container">
+            <a href="https://wa.me/2462941021" class="whatsapp-float" target="_blank" title="Chat con nosotros en WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+</a>
+
+            <div class="box">
+                                            <img src="C:\Users\HP\Desktop\4.jpeg" alt="Descripción de la imagen">
+
+                <h2 class="steps-title" >Engorda de cerdos</h2>
+                <p>Te interesa la crianza de cerdo pero no tienes el lugar, espacio  y tiempo  para cuidarlos, en Inversiones WeAlt es un sistema que te permite hacer crecer tu dinero mediante la compra y venta de cerdos de engorda en cualquier lugar, a cualquier hora.
+
+
+Nosotros cuidaremos y atenderemos tus animales 24/7, los 365 del año y cada 5 meses, venderemos los cerdos a carnicerías que compran en grandes volúmenes, después Inversiones WeAlt cobrará el 15% a manera de comisión para cubrir los gastos de operación y te entregará el <span class="bold-text">22%</span> restante anual o en automático sigue la reinversion hasta el siguiente ciclo y se te enviará otro contrato.</p>
+
+<button>Habla con un asesor</button>
+
+ </div>
+
+  <div class="box">
+<h1 class="steps-title">¿Cómo funciona?</h1>
+<p>No tienes que preocuparte por tus animales, solo fondea y ve como tu dinero aumenta, Inversiones WeAlt se hará cargo de todas las operaciones que requiere tus animales. Al llegar al peso adecuado para la venta, comúnmente entre los 4 meses y medio a 5 meses, Inversiones WeAlt  completará su venta y a manera de comisión por todos los gastos de operación solo se quedará con un 15% del total de la venta anual.
+Rendimiento anual 22%. Mínimo para invertir $500. Plazo 6 meses. Pago cada 3 meses.</p>
+<button>Habla con un asesor</button>
+
+            </div>
+
+            <div class="box">
+            
+                <div class="steps-container">
+        <h1 class="steps-title">Pasos para realizar un fondeo</h1>
+        <ol class="steps-list">
+            <li class="step-item">
+                <h2 class="step-number">Paso 1:</h2>
+                <p class="step-description">Inicia sesión mediante la app de tu entidad bancaria.</p>
+            </li>
+            <li class="step-item">
+                <h2 class="step-number">Paso 2:</h2>
+                <p class="step-description">Busca la opción de "Traspaso Bancario".</p>
+            </li>
+            <li class="step-item">
+                <h2 class="step-number">Paso 3:</h2>
+                <p class="step-description">Selecciona la cuenta de origen.</p>
+            </li>
+            <li class="step-item">
+                <h2 class="step-number">Paso 4:</h2>
+                <p class="step-description">Selecciona la cuenta de destino. (No te olvides de comprobar que los datos bancarios sean correctos antes de confirmar la operación).</p>
+            </li>
+            <li class="step-item">
+                <h2 class="step-number">Paso 5:</h2>
+                <p class="step-description">Introduce el importe que deseas transferir.</p>
+            </li>
+            <li class="step-item">
+                <h2 class="step-number">Paso 6:</h2>
+                <p class="step-description">En concepto, pon "tu nombre completo".</p>
+            </li>
+            <li class="step-item">
+                <h2 class="step-number">Paso 7:</h2>
+                <p class="step-description">Confirma la operación.</p>
+            </li>
+        </ol>
+        <div class="additional-info">
+            <h2 class="info-title">Información Adicional:</h2>
+            <p><strong>Nombre completo del titular de la cuenta a depositar:</strong></p>
+            <p><strong>Número de tarjeta (10 dígitos) o CLABE (18 dígitos):</strong></p>
+            <p><strong>Monto a depositar:</strong></p>
+        </div>
+    </div>
+    <button>Pide datos para depositar</button>
+                </div>
+
+
+            
+
+ 
+            </div>
+             
+        <h2>Contáctanos</h2>
+        <div class="social-media">
+            <a href="https://www.facebook.com/yourpage" class="social-icon" target="_blank" title="Facebook">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+            </a>
+            <a href="https://wa.me/2463311406" class="social-icon" target="_blank" title="WhatsApp">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+            </a>
+        </div>
+    </main>
+    
+</body>
+</html>
+    

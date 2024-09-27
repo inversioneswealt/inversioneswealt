@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            width: 100%;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        
+
+        header h1, footer p {
+            margin: 0;
+        }
+
+
+
+    ol {
+        font-size: 18px; /* Tamaño de fuente */
+    margin-bottom: 20px; /* Margen inferior */
+    line-height: 1.8; /* Altura de línea */
+    color: #666; /* Color de texto secundario */
+  }
+        p {
+      color: #666666; /* Color de texto gris */
+  font-size: 1.2rem; /* Tamaño de fuente más pequeño */
+  margin-top: 10px; /* Espacio arriba para separación */
+  margin-bottom: 0; /* Elimina el margen inferior predeterminado */
+   margin-top: 20px; /* Espacio arriba para separación */
+  margin-bottom: 20px; /* Espacio abajo para separación */
+  margin-left: 20px; /* Margen a la izquierda */
+  margin-right: 20px; /* Margen a la derecha */
+  }
+
+    h2, h3 {
+    font-weight: 600; /* Peso de la fuente */
+    color: #333; /* Color de texto principal */
+    margin-bottom: 15px; /* Margen inferior */
+  }
+
+  h1 {
+    font-size: 28px; /* Tamaño de fuente del título principal */
+  }
+
+        /* Contenedor principal */
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 80%;
+            margin: 0 auto; /* Centra horizontalmente */
+            border: 1px solid #ccc;
+        }
+
+        .container-one {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 80%;
+             margin: 0 auto; /* Centra horizontalmente */
+            border: 1px solid #ccc;
+
+        }
+
+        /* Div adicional */
+        .additional-content {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+ header h1, footer p {
+            margin: 0;
+        }
+
+        /* Pie de página */
+        footer {
+             footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        }
+
+        
+        
+         .container-one button {
+            padding: 15px 60px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra ligera */
+        }
+
+        .container button {
+            padding: 15px 60px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra ligera */
+        }
+
+       .header {
+        position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espacia los elementos a los extremos */
+  padding: 10px 20px; /* Espacio alrededor del header */
+  background-color: #f8f9fa; /* Color de fondo del header */
+}
+
+.header-logo {
+  max-height: 50px; /* Altura máxima de la imagen del logo */
+  height: auto; /* Mantiene la relación de aspecto */
+}
+
+.header-button {
+  padding: 10px 20px; /* Espacio interno del botón */
+  font-size: 1rem; /* Tamaño del texto del botón */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 4px; /* Esquinas redondeadas del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s; /* Transición suave del color de fondo */
+  margin-right: 40px;
+}
+
+.header-button:hover {
+  background-color: #0056b3; /* Color de fondo cuando el botón se pasa el cursor por encima */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .header {
+     flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
+  }
+
+  .header-button {
+    margin-top: 10px; /* Espacio arriba del botón cuando está apilado */
+  }
+}
+
+       
+
+        .container button:hover {
+            background-color: #007bff;
+        }
+
+        .container-one img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+
+
+        .uno {
+            max-width: 40%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+.responsive-img1 {
+  max-width: 20%; /* Asegura que la imagen no se desborde del contenedor */
+  height: 100%; /* Permite que la altura se ajuste automáticamente según el ancho */
+  display: block; /* Hace que la imagen sea un bloque para alinearla correctamente */
+  margin: 0 auto; /* Centra la imagen horizontalmente dentro del contenedor */
+  border-radius: 8px; /* Añade esquinas redondeadas */
+
+}
+        .responsive-img {
+  max-width: 20%; /* Asegura que la imagen no se desborde del contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+  display: block; /* Hace que la imagen sea un bloque para alinearla correctamente */
+  margin: 0 auto; /* Centra la imagen horizontalmente dentro del contenedor */
+  border-radius: 8px; /* Añade esquinas redondeadas */
+
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px; /* Ajusta la distancia desde el borde inferior */
+  right: 20px; /* Ajusta la distancia desde el borde derecho */
+  background-color: #25D366; /* Color de fondo de WhatsApp */
+  border-radius: 50%; /* Hace que el botón sea circular */
+  width: 60px; /* Tamaño del botón */
+  height: 60px; /* Tamaño del botón */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el efecto flotante */
+  z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.whatsapp-float img {
+  width: 30px; /* Tamaño del logo dentro del botón */
+  height: 30px; /* Tamaño del logo dentro del botón */
+}
+
+.whatsapp-float:hover {
+  background-color: #128C7E; /* Color de fondo cuando el botón se pasa el cursor por encima */
+}
+.social-media {
+  display: flex;
+  gap: 20px; /* Espacio entre los íconos */
+  justify-content: center; /* Centra los íconos horizontalmente */
+  padding: 20px; /* Espacio alrededor del contenedor */
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Tamaño del contenedor del ícono */
+  height: 50px; /* Tamaño del contenedor del ícono */
+  border-radius: 50%; /* Hace que el contenedor sea circular */
+  background-color: #f1f1f1; /* Fondo claro para el contenedor del ícono */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el efecto flotante */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.social-icon img {
+  width: 30px; /* Tamaño del logo dentro del contenedor */
+  height: 30px; /* Tamaño del logo dentro del contenedor */
+}
+
+.social-icon:hover {
+  background-color: #ddd; /* Color de fondo cuando se pasa el cursor sobre el ícono */
+}
+
+    </style>
+</head>
+
+
+<body>
+
+
+
+<header class="header">
+    <img src="C:\Users\HP\Desktop\13.png" alt="Logo" class="header-logo">
+    <button class="header-button">Quiero invertir</button>
+  </header>
+
+    <div class="container-one">
+                <img class="uno" src="C:\Users\HP\Desktop\11.png" alt="Descripción de la imagen">
+
+        <p>Inversiones WeAlt es un sistema que te permite hacer crecer tu dinero invirtiendo en diferentes activos.
+
+Con Inversiones WeAlt no tienes qué preocuparte por hacer que tu dinero crezca.
+Nosotros cuidaremos y atenderemos tus inversiones 24/7, los 365 del año.</p>
+        <button>Quiero invertir</button>
+    </div>
+
+    <div class="container">
+        <a href="https://wa.me/2462941021" class="whatsapp-float" target="_blank" title="Chat con nosotros en WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+</a>
+
+        <h2>¿Cómo funciona?</h2>
+        <p>No tienes que preocuparte por tus inversiones, solo invierte y ve como tu dinero aumenta, Inversiones WeAlt se hará cargo de todas las operaciones que requiere tus inversiones. </p><p> Al terminar cada periodo de tu inversión tendrás de regreso tu inversión  y a manera de comisión por todos los gastos de operación solo se quedará con un % del total del ciclo, la comisión dependerá de la área en la cual inviertas.</p>
+        <button>Habla con un asesor</button>
+    </div>
+
+    <div class="container">
+        <h3>¿Por qué ser parte de Inversiones WeAlt?</h3>
+  <ol style="list-style: none;">
+  <li>Haz crecer tu dinero.</li>
+  <li>Convierte tu dinero en activos.</li>
+  </ol>
+  <img class="responsive-img" src="C:\Users\HP\Desktop\8.png" alt="Descripción de la imagen">
+</div>
+  <div class="container">
+<h3> Atención personalizada.</h3>   
+<ol style="list-style: none;">
+<li>Un asesor te tenderá para aclarar tus dudas.</li>
+</ol>
+<img class="responsive-img" src="C:\Users\HP\Desktop\8.png" alt="Descripción de la imagen">
+</div>
+
+<div class="container">
+<h3>Reportes sobre tus inversiones.  </h3>
+<ol style="list-style: none;">
+<li>
+Recibirás reportes sobre el estado de tus inversiones. 
+</li>
+</ol>
+<img class="responsive-img" src="C:\Users\HP\Desktop\8.png" alt="Descripción de la imagen">
+
+</div>
+
+<div class="container">
+<h3>Comunidad de socios.</h3>
+<ol style="list-style: none;">
+<li>
+Forma parte de nuestra comunidad de socios inversores.
+</li>
+</ol style="list-style: none;">
+<img class="responsive-img" src="C:\Users\HP\Desktop\8.png" alt="Descripción de la imagen">
+</div>
+
+<div class="container">
+<h3>Compras accesibles </h3>
+<ol style="list-style: none;">
+<li>
+Comienza invertir con un mínino de 500 pesos y tus siguientes compras.
+</li>
+</ol>
+<img class="responsive-img" src="C:\Users\HP\Desktop\8.png" alt="Descripción de la imagen">
+</div>
+    
+    
+ <div class="container">
+        <h3>Tu dinero está seguro.</h3>
+        <p> Contratos de compra venta. 
+Al invertir con nosotros, firmaremos y te entregaremos un contrato avalado por la cantidad que invertiste.
+<img class="responsive-img" src="C:\Users\HP\Desktop\8.png" alt="Descripción de la imagen">
+</div>
+
+
+<div class="container">
+<h3>Legalmente constituido. </h3>
+<p>Somos una empresa legalmente constituida, por lo que podemos expedir un factura si así lo deseas.
+</p>
+    </div>
+    
+    
+    <div class="container">
+        <h3>Contáctanos</h3>
+        <div class="social-media">
+  <a href="https://www.facebook.com/yourpage" class="social-icon" target="_blank" title="Facebook">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+  </a>
+  <a href="https://wa.me/246 331 1406" class="social-icon" target="_blank" title="WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+  </a>
+</div>
+
+        <p>
+
+Conoce nuestras oficinas 
+estamos ubicados en Calle Emiliano Zapata #3, Santa Ana Nopalucan Tlaxcala C.P. 90135.
+</p>
+ <button>Quiero invertir</button>
+    </div>
+
+
+
+
+</body>
+</html>
+    
+    
