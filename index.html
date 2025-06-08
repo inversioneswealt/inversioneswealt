@@ -1,391 +1,322 @@
+<!-- Reemplaza el contenido del archivo original con este código mejorado visualmente -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inicio</title>
-    <style>
-        
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inversión Segura</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
 
-
-        footer {
-            background-color: #007bff;
-            color: white;
-            width: 100%;
-            padding: 15px 0;
-            text-align: center;
-        }
-
-        
-
-        header h1, footer p {
-            margin: 0;
-        }
-
-
-
-    ol {
-        font-size: 18px; /* Tamaño de fuente */
-    margin-bottom: 20px; /* Margen inferior */
-    line-height: 1.8; /* Altura de línea */
-    color: #666; /* Color de texto secundario */
-  }
-        p {
-      color: #666666; /* Color de texto gris */
-  font-size: 1.2rem; /* Tamaño de fuente más pequeño */
-  margin-top: 10px; /* Espacio arriba para separación */
-  margin-bottom: 0; /* Elimina el margen inferior predeterminado */
-   margin-top: 20px; /* Espacio arriba para separación */
-  margin-bottom: 20px; /* Espacio abajo para separación */
-  margin-left: 20px; /* Margen a la izquierda */
-  margin-right: 20px; /* Margen a la derecha */
-  }
-
-    h2, h3 {
-    font-weight: 600; /* Peso de la fuente */
-    color: #333; /* Color de texto principal */
-    margin-bottom: 15px; /* Margen inferior */
-  }
-
-  h1 {
-    font-size: 28px; /* Tamaño de fuente del título principal */
-  }
-
-        /* Contenedor principal */
-        .container {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            max-width: 80%;
-            margin: 0 auto; /* Centra horizontalmente */
-            border: 1px solid #ccc;
-        }
-
-        .container-one {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            max-width: 80%;
-             margin: 0 auto; /* Centra horizontalmente */
-            border: 1px solid #ccc;
-
-        }
-
-        /* Div adicional */
-        .additional-content {
-            background-color: #f0f0f0;
-            padding: 20px;
-            margin-top: 20px;
-            text-align: center;
-            border-radius: 20px;
-        }
-
- header h1, footer p {
-            margin: 0;
-        }
-
-        /* Pie de página */
-        footer {
-             footer {
-            text-align: center;
-            padding: 20px;
-            background: #333;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        }
-
-        
-        
-         .container-one button {
-            padding: 15px 60px;
-            border: none;
-            border-radius: 5px;
-            background-color: #007bff;
-            color: white;
-            cursor: pointer;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra ligera */
-        }
-
-        .container button {
-            padding: 15px 60px;
-            border: none;
-            border-radius: 5px;
-            background-color: #007bff;
-            color: white;
-            cursor: pointer;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra ligera */
-        }
-
-       .header {
-        position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Espacia los elementos a los extremos */
-  padding: 10px 20px; /* Espacio alrededor del header */
-  background-color: #f8f9fa; /* Color de fondo del header */
-}
-
-.header-logo {
-  max-height: 50px; /* Altura máxima de la imagen del logo */
-  height: auto; /* Mantiene la relación de aspecto */
-}
-
-.header-button {
-  padding: 10px 20px; /* Espacio interno del botón */
-  font-size: 1rem; /* Tamaño del texto del botón */
-  background-color: #007bff; /* Color de fondo del botón */
-  color: #fff; /* Color del texto del botón */
-  border: none; /* Elimina el borde del botón */
-  border-radius: 4px; /* Esquinas redondeadas del botón */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  transition: background-color 0.3s; /* Transición suave del color de fondo */
-  margin-right: 40px;
-}
-
-.header-button:hover {
-  background-color: #0056b3; /* Color de fondo cuando el botón se pasa el cursor por encima */
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
-  .header {
-     flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
-  }
-
-  .header-button {
-    margin-top: 10px; /* Espacio arriba del botón cuando está apilado */
-  }
-}
-
-       
-
-        .container button:hover {
-            background-color: #007bff;
-        }
-
-        .container-one img {
-            max-width: 80%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-
-
-        .uno {
-            max-width: 40%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-.responsive-img1 {
-  max-width: 20%; /* Asegura que la imagen no se desborde del contenedor */
-  height: 100%; /* Permite que la altura se ajuste automáticamente según el ancho */
-  display: block; /* Hace que la imagen sea un bloque para alinearla correctamente */
-  margin: 0 auto; /* Centra la imagen horizontalmente dentro del contenedor */
-  border-radius: 8px; /* Añade esquinas redondeadas */
-
-}
-        .responsive-img {
-  max-width: 20%; /* Asegura que la imagen no se desborde del contenedor */
-  height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
-  display: block; /* Hace que la imagen sea un bloque para alinearla correctamente */
-  margin: 0 auto; /* Centra la imagen horizontalmente dentro del contenedor */
-  border-radius: 8px; /* Añade esquinas redondeadas */
-
-}
-
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px; /* Ajusta la distancia desde el borde inferior */
-  right: 20px; /* Ajusta la distancia desde el borde derecho */
-  background-color: #25D366; /* Color de fondo de WhatsApp */
-  border-radius: 50%; /* Hace que el botón sea circular */
-  width: 60px; /* Tamaño del botón */
-  height: 60px; /* Tamaño del botón */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el efecto flotante */
-  z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
-  text-decoration: none; /* Elimina el subrayado del enlace */
-}
-
-.whatsapp-float img {
-  width: 30px; /* Tamaño del logo dentro del botón */
-  height: 30px; /* Tamaño del logo dentro del botón */
-}
-
-.whatsapp-float:hover {
-  background-color: #128C7E; /* Color de fondo cuando el botón se pasa el cursor por encima */
-}
-.social-media {
-  display: flex;
-  gap: 20px; /* Espacio entre los íconos */
-  justify-content: center; /* Centra los íconos horizontalmente */
-  padding: 20px; /* Espacio alrededor del contenedor */
-}
-
-.social-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px; /* Tamaño del contenedor del ícono */
-  height: 50px; /* Tamaño del contenedor del ícono */
-  border-radius: 50%; /* Hace que el contenedor sea circular */
-  background-color: #f1f1f1; /* Fondo claro para el contenedor del ícono */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el efecto flotante */
-  text-decoration: none; /* Elimina el subrayado del enlace */
-}
-
-.social-icon img {
-  width: 30px; /* Tamaño del logo dentro del contenedor */
-  height: 30px; /* Tamaño del logo dentro del contenedor */
-}
-
-.social-icon:hover {
-  background-color: #ddd; /* Color de fondo cuando se pasa el cursor sobre el ícono */
-}
-
-    </style>
+  </style>
 </head>
 
-
-<body>
-
-
-
-<header class="header">
-    <img src="https://github.com/inversioneswealt/inversioneswealt/blob/main/13.png?raw=true" alt="Logo" class="header-logo">
-    <button onclick="location.href='https://inversioneswealt.github.io/inversiones/';" class="header-button">Quiero invertir</button>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-gray-900 text-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold tracking-wide">Inversiones WeAlt</div>
+      <nav class="hidden md:flex space-x-6 text-sm">
+        <a href="#invierte" class="hover:text-cyan-400 transition">Invierte</a>
+        <a href="#porque" class="hover:text-cyan-400 transition">¿Por qué elegirnos?</a>
+        <a href="#funciona" class="hover:text-cyan-400 transition">Cómo funciona</a>
+        <a href="#conocenos" class="hover:text-cyan-400 transition">Conócenos</a>
+        <a href="#simulador" class="hover:text-cyan-400 transition">Simulador</a>
+        <a href="#contacto" class="hover:text-cyan-400 transition">Contáctanos</a>
+      </nav>
+      <button id="menuToggle" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 text-sm space-y-2">
+      <a href="#invierte" class="block py-2 hover:text-cyan-400 transition">Invierte</a>
+      <a href="#porque" class="block py-2 hover:text-cyan-400 transition">¿Por qué invertir?</a>
+      <a href="#funciona" class="block py-2 hover:text-cyan-400 transition">Cómo funciona</a>
+      <a href="#conocenos" class="block py-2 hover:text-cyan-400 transition">Conócenos</a>
+      <a href="#simulador" class="block py-2 hover:text-cyan-400">Simulador</a>
+      <a href="#contacto" class="block py-2 hover:text-cyan-400 transition">Contáctanos</a>
+    </div>
   </header>
 
-    <div class="container-one">
-                <img class="uno" src="https://github.com/inversioneswealt/inversioneswealt/blob/main/11.png?raw=true" alt="Descripción de la imagen">
+  <main>
+   <!-- Invierte -->
+<!-- Invierte -->
+<section id="invierte" class="bg-white py-24 px-6 md:px-12">
+  <div class="max-w-4xl mx-auto text-center">
+    <h1 class="text-3xl md:text-5xl font-semibold tracking-tight text-gray-900 mb-10">
+      Invierte directo y gana más que en el banco
+    </h1>
 
-        <p>Inversiones WeAlt es un sistema que te permite hacer crecer tu dinero invirtiendo en diferentes activos.
+    <img 
+      src="https://storage.googleapis.com/sigo-blog-production/2023/02/1.-Blog-1_2.jpg"
+      alt="Inversión exitosa"
+      class="w-full max-w-3xl mx-auto mb-12 rounded-xl object-cover"
+    />
 
-Con Inversiones WeAlt no tienes qué preocuparte por hacer que tu dinero crezca.
-Nosotros cuidaremos y atenderemos tus inversiones 24/7, los 365 del año.</p>
-        <button onclick="location.href='https://inversioneswealt.github.io/inversiones/';">Quiero invertir</button>
+    <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 text-center text-gray-800 mb-16">
+      <div>
+        <p class="text-sm text-gray-500 mb-1">Rendimiento</p>
+        <p class="text-lg font-medium text-black">Tasa fija del 20% anual</p>
+      </div>
+      <div>
+        <p class="text-sm text-gray-500 mb-1">Monto mínimo</p>
+        <p class="text-lg font-medium text-black">Desde $1000 MXN</p>
+      </div>
+      <div>
+        <p class="text-sm text-gray-500 mb-1">Plazo</p>
+        <p class="text-lg font-medium text-black">A un año</p>
+      </div>
     </div>
 
-    <div class="container">
-        <a href="https://wa.me/2462941021" class="whatsapp-float" target="_blank" title="Chat con nosotros en WhatsApp">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
-</a>
-
-        <h2>¿Cómo funciona?</h2>
-        <p>No tienes que preocuparte por tus inversiones, solo invierte y ve como tu dinero aumenta, Inversiones WeAlt se hará cargo de todas las operaciones que requiere tus inversiones. </p><p> Al terminar cada periodo de tu inversión tendrás de regreso tu inversión  y a manera de comisión por todos los gastos de operación solo se quedará con un % del total del ciclo, la comisión dependerá de la área en la cual inviertas.</p>
-        <button onclick="window.location.href='https://wa.me/2462941021';" >Habla con un asesor</button>
+    <div class="mt-12 text-left max-w-3xl mx-auto mb-8">
+      <p class="text-sm text-gray-500 mb-1">
+        Meta actual: <span class="text-lg font-medium text-black">$500,000.00 MXN</span>
+      </p>
+      <div class="w-full bg-gray-200 rounded-full h-6 overflow-hidden relative shadow-inner">
+        <div 
+          id="progress-bar" 
+          class="bg-cyan-500 h-full text-white text-sm flex items-center justify-end px-2 font-medium transition-all duration-700 ease-out rounded-full" 
+          style="width: 0%;">
+          <span id="progress-text">0%</span>
+        </div>
+      </div>
     </div>
 
-    <div class="container">
-        <h3>¿Por qué ser parte de Inversiones WeAlt?</h3>
-  <ol style="list-style: none;">
-  <li>Haz crecer tu dinero.</li>
-  <li>Convierte tu dinero en activos.</li>
-  </ol>
-  <img class="responsive-img" src="https://github.com/inversioneswealt/inversioneswealt/blob/main/8.png?raw=true" alt="Descripción de la imagen">
-</div>
-  <div class="container">
-<h3> Atención personalizada.</h3>   
-<ol style="list-style: none;">
-<li>Un asesor te tenderá para aclarar tus dudas.</li>
-</ol>
-<img class="responsive-img" src="https://github.com/inversioneswealt/inversioneswealt/blob/main/8.png?raw=true" alt="Descripción de la imagen">
-</div>
+    <a href="#funciona"
+       class="inline-block text-white bg-black hover:bg-gray-900 px-6 py-3 rounded-md text-base font-medium transition">
+       Cómo funciona
+    </a>
+  </div>
+</section>
 
-<div class="container">
-<h3>Reportes sobre tus inversiones.  </h3>
-<ol style="list-style: none;">
-<li>
-Recibirás reportes sobre el estado de tus inversiones. 
-</li>
-</ol>
-<img class="responsive-img" src="https://github.com/inversioneswealt/inversioneswealt/blob/main/8.png?raw=true" alt="Descripción de la imagen">
+</section>
+ <!-- Por qué invertir con nosotros -->
+<section id="porque" class="py-24 bg-gray-100 px-6 md:px-12">
+  <div class="max-w-6xl mx-auto text-center mb-16">
+    <h2 class="text-4xl font-semibold text-gray-900">¿Por qué invertir con nosotros?</h2>
+  </div>
 
-</div>
-
-<div class="container">
-<h3>Comunidad de socios.</h3>
-<ol style="list-style: none;">
-<li>
-Forma parte de nuestra comunidad de socios inversores.
-</li>
-</ol style="list-style: none;">
-<img class="responsive-img" src="https://github.com/inversioneswealt/inversioneswealt/blob/main/8.png?raw=true" alt="Descripción de la imagen">
-</div>
-
-<div class="container">
-<h3>Compras accesibles </h3>
-<ol style="list-style: none;">
-<li>
-Comienza invertir con un mínino de 500 pesos y tus siguientes compras.
-</li>
-</ol>
-<img class="responsive-img" src="https://github.com/inversioneswealt/inversioneswealt/blob/main/8.png?raw=true" alt="Descripción de la imagen">
-</div>
-    
-    
- <div class="container">
-        <h3>Tu dinero está seguro.</h3>
-        <p> Contratos de compra venta. 
-Al invertir con nosotros, firmaremos y te entregaremos un contrato avalado por la cantidad que invertiste.
-<img class="responsive-img" src="https://github.com/inversioneswealt/inversioneswealt/blob/main/8.png?raw=true" alt="Descripción de la imagen">
-</div>
-
-
-<div class="container">
-<h3>Legalmente constituido. </h3>
-<p>Somos una empresa legalmente constituida, por lo que podemos expedir un factura si así lo deseas.
-</p>
-    </div>
-    
-    
-    <div class="container">
-        <h3>Contáctanos</h3>
-        <div class="social-media">
-  <a href="https://www.facebook.com/share/HjfvbE2cGnLzirwA/?mibextid=qi2Omg" class="social-icon" target="_blank" title="Facebook">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg">
-  </a>
-  <a href="https://wa.me/2462941021" class="social-icon" target="_blank" title="WhatsApp">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
-  </a>
-</div>
-
-        <p>
-
-Conoce nuestras oficinas 
-estamos ubicados en Calle Emiliano Zapata #3, Santa Ana Nopalucan Tlaxcala C.P. 90135.
-</p>
- <button onclick="location.href='https://inversioneswealt.com/inversiones/';" >Quiero invertir</button>
+  <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+    <!-- Rendimientos -->
+    <div class="bg-white p-8 rounded-2xl shadow hover:shadow-md transition">
+      <div class="text-cyan-600 mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold mb-2">Obtén mayores rendimientos</h3>
+      <p class="text-gray-600">Ofrecemos mayores rendimientos que otras instituciones financieras como bancos. Obtienes una tasa del <strong>20% anual</strong>.</p>
     </div>
 
+    <!-- Garantías -->
+    <div class="bg-white p-8 rounded-2xl shadow hover:shadow-md transition">
+      <div class="text-cyan-600 mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2l4 -4m1 -4h2a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2H6a2 2 0 0 1 -2 -2V6a2 2 0 0 1 2 -2h2" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold mb-2">Obtén garantías</h3>
+      <p class="text-gray-600">Se establece en el contrato como garantía principal el <strong>flujo de caja futuro libre</strong> junto con los activos. Se incluyen cláusulas que limitan la distribución de ganacias para priorizar el pago de la tu inversión junto con los rendimientos, la obligación de mantener un nivel de liquidez saludable y se restringen nuevos endeudamientos o venta de activos.</p>
+    </div>
+
+    <!-- Reportes auditados -->
+    <div class="bg-white p-8 rounded-2xl shadow hover:shadow-md transition">
+      <div class="text-cyan-600 mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-6h6v6m-3-10v.01M12 2a10 10 0 100 20 10 10 0 000-20z" />
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold mb-2">Obtienes reportes auditados</h3>
+      <p class="text-gray-600">Un auditor externo revisará la información financiera <strong>trimestralmente</strong>. Recibirás un reporte facil de entender donde evaluamos la liquidez, el ratio de deuda/ingresos y el cumplimiento de las restricciones establecidas.</p>
+    </div>
+  </div>
+</section>
 
 
 
+    <!-- Cómo funciona -->
+<section id="funciona" class="py-24 px-6 max-w-7xl mx-auto">
+  <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-12 text-center">¿Cómo funciona?</h2>
+
+  <div class="grid gap-12 md:grid-cols-2">
+    <!-- Paso 1 -->
+    <div class="bg-white border border-gray-200 rounded-xl p-6 md:p-8 text-center shadow-sm hover:shadow-md transition-all duration-200">
+      <img src="https://img.freepik.com/vector-premium/asesor-financiero-empresarial-concepto-planificacion-inversiones-empresariales_115495-255.jpg"
+           alt="Asesor financiero"
+           class="w-full h-48 object-cover rounded-lg mb-6">
+
+      <h3 class="text-xl font-medium text-gray-900 mb-2">Asesor personal</h3>
+      <p class="text-gray-500 mb-6">Un asesor te acompañará en cada paso para resolver dudas y guiarte en el proceso.</p>
+
+      <button class="bg-black text-white px-5 py-2.5 rounded-md text-sm font-medium hover:bg-gray-900 transition">
+        Solicita un asesor
+      </button>
+    </div>
+
+    <!-- Paso 2 -->
+    <div class="bg-white border border-gray-200 rounded-xl p-6 md:p-8 text-center shadow-sm hover:shadow-md transition-all duration-200">
+      <img src="https://st2.depositphotos.com/4202565/6112/v/450/depositphotos_61121081-stock-illustration-agreement-icon-contract.jpg"
+           alt="Contrato"
+           class="w-full h-48 object-cover rounded-lg mb-6">
+
+      <h3 class="text-xl font-medium text-gray-900 mb-2">Firma de contrato</h3>
+      <p class="text-gray-500 mb-6">Revisa y firma el contrato de forma digital o presencial de manera sencilla.</p>
+
+      <a href="contrato.pdf" download
+         class="bg-black text-white px-5 py-2.5 rounded-md text-sm font-medium hover:bg-gray-900 transition">
+        Ver contrato
+      </a>
+    </div>
+
+    <!-- Paso 3 -->
+    <div class="bg-white border border-gray-200 rounded-xl p-6 md:p-8 text-center shadow-sm hover:shadow-md transition-all duration-200">
+      <img src="https://www.bbva.com/wp-content/uploads/2019/11/transferencias2.jpg"
+           alt="Depósito"
+           class="w-full h-48 object-cover rounded-lg mb-6">
+
+      <h3 class="text-xl font-medium text-gray-900 mb-2">Depósito</h3>
+      <p class="text-gray-500">Realiza el depósito o transferencia a la cuenta indicada por tu asesor.</p>
+    </div>
+
+    <!-- Paso 4 -->
+    <div class="bg-white border border-gray-200 rounded-xl p-6 md:p-8 text-center shadow-sm hover:shadow-md transition-all duration-200">
+      <img src="https://imagenes.eleconomista.com.mx/files/image_853_480/uploads/2024/09/30/66fb560d4faec.jpeg"
+           alt="Rendimientos"
+           class="w-full h-48 object-cover rounded-lg mb-6">
+
+      <h3 class="text-xl font-medium text-gray-900 mb-2">Obtén tus rendimientos</h3>
+      <p class="text-gray-500">Recibirás tu capital más un 20% de ganancia anual al finalizar el plazo.</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Conócenos -->
+    <section id="conocenos" class="py-20 px-4 bg-gray-50">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold mb-4">Conócenos</h2>
+          <p class="text-gray-700 mb-4 leading-relaxed">Invertimos capital en la compra-venta de autos. Nos encargamos de todo el proceso desde la compra, detallado del auto, revisión-reparación mecánica y la venta al cliente final, de esa manera obtenemos los rendimientos que ofrecemos. Tenemos más de 5 años de experiencia en el negocio.</p>
+          <p class="text-gray-700 mb-6 leading-relaxed">Si tienes alguna duda contáctanos y con gusto te atendemos.</p>
+          <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition">Habla con nosotros</button>
+        </div>
+        <div>
+          <img src="https://st3.depositphotos.com/4111759/17392/v/1600/depositphotos_173927316-stock-illustration-car-dealer-salesperson-vector-choosing.jpg" alt="Auto a la venta" class="rounded shadow-md">
+        </div>
+      </div>
+    </section>
+    
+<section id="simulador" class="py-24 px-6 bg-white border-t border-gray-200">
+  <div class="max-w-xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">Simulador de Rendimientos</h2>
+    <p class="text-gray-500 text-base md:text-lg mb-10">
+      Calcula cuánto ganarás invirtiendo a una tasa fija del 20% anual.
+    </p>
+
+    <div class="bg-gray-50 rounded-xl p-6 md:p-8 text-left space-y-6">
+      <div>
+        <label for="monto" class="block text-sm font-medium text-gray-700 mb-1">Monto a invertir</label>
+        <input type="number" id="monto" min="1000" value="1000"
+               class="w-full border border-gray-300 rounded-md px-4 py-2 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black transition" 
+               placeholder="$1000 MXN mínimo">
+      </div>
+
+      <button onclick="calcularRendimiento()"
+              class="w-full bg-black text-white py-2.5 rounded-md text-base font-medium hover:bg-gray-900 transition">
+        Calcular rendimiento
+      </button>
+
+      <div id="resultado" class="pt-4 text-gray-800 text-base font-medium hidden">
+        <!-- Resultado dinámico -->
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="bg-gray-900 text-white py-20 px-4 text-center">
+      <div class="max-w-xl mx-auto space-y-6">
+        <h2 class="text-2xl font-bold mb-4">Contáctanos</h2>
+        <hr class="border-gray-700">
+        <p class="mb-2">📞 <span class="font-medium">Teléfono:</span> 55 1234 5678</p>
+        <p class="mb-6">✉️ <span class="font-medium">Correo:</span> contacto@inversionsegura.mx</p>
+        <a href="https://wa.me/5215512345678" target="_blank" class="inline-block bg-green-500 px-6 py-3 rounded hover:bg-green-600 transition">WhatsApp Directo</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4 text-sm tracking-wide">
+    © 2025 Inversión Segura. Todos los derechos reservados.
+  </footer>
+
+  <!-- JS: menú responsive -->
+  <script>
+    const toggle = document.getElementById("menuToggle");
+    const menu = document.getElementById("mobileMenu");
+    const links = menu.querySelectorAll("a");
+
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+
+    links.forEach(link => {
+      link.addEventListener("click", () => {
+        menu.classList.add("hidden");
+      });
+    });
+
+ function calcularRendimiento() {
+    const monto = parseFloat(document.getElementById('monto').value);
+    const resultadoDiv = document.getElementById('resultado');
+
+    if (isNaN(monto) || monto < 1000) {
+      resultadoDiv.innerHTML = "El monto mínimo es de $1,000.00 MXN.";
+      resultadoDiv.classList.remove("hidden");
+      return;
+    }
+
+    const rendimiento = monto * 0.20;
+    const total = monto + rendimiento;
+
+    const formatoMoneda = new Intl.NumberFormat('es-MX', {
+      style: 'currency',
+      currency: 'MXN'
+    });
+
+    resultadoDiv.innerHTML = `
+      Invirtiendo <strong>${formatoMoneda.format(monto)}</strong>, al final del año recibirás un total de <strong>${formatoMoneda.format(total)}</strong>.<br>
+      Ganancia: <strong>${formatoMoneda.format(rendimiento)}</strong>
+    `;
+    resultadoDiv.classList.remove("hidden");
+  }
+
+  // Simula cuánto se ha recaudado actualmente
+  const meta = 500000;
+  const recaudado = 185000; // Cambia este valor según el monto actual
+  const porcentaje = Math.min((recaudado / meta) * 100, 100).toFixed(1);
+
+  const bar = document.getElementById("progress-bar");
+  const text = document.getElementById("progress-text");
+
+  // Muestra avance con animación
+  window.addEventListener("DOMContentLoaded", () => {
+    bar.style.width = porcentaje + "%";
+    text.textContent = porcentaje + "%";
+  });
+
+
+  </script>
 </body>
+
 </html>
-    
+
     
